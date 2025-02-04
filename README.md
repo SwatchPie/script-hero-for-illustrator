@@ -40,7 +40,7 @@ So, while there is some informative stuff in this repo's `docs` directory, the m
 
 It's no secret that consistent code is easier to work with - especially when you put it down for a while. As mentioned, **Script Hero** started as a roundup of code I was repeating in various scripts. 
 
-The [.vscode](.vscode/README.md) directory has all kinds of code snippets to help me refactor in a standardized way and to write scripts using the library. Things aren't perfectly standardized and may never be, but the broad & important strokes, like a modular approach & error handling, are solid and these snippets help support that.  
+The [.vscode](.vscode/README.md) directory has all kinds of code snippets to help me refactor in a standardized way and to write scripts using the library. Things aren't perfectly standardized and may never be, but the important things - like a modular approach & error handling - are solid and these snippets help to support that.
 
 Everything in the `.vscode` directory is specific to ExtendScript and Adobe Illustrator and includes:
 
