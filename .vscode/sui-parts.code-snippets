@@ -1,0 +1,149 @@
+{
+  "script-header": {
+    "prefix": "script-header",
+    "scope": "javascript,javascriptreact",
+    "body": [
+      "/**",
+      " * @file ${TM_FILEPATH}",
+      " * @author SwatchPie.io",
+      " * @version 1.0",
+      " * @date ${CURRENT_YEAR}-${CURRENT_MONTH}-${CURRENT_DATE}",
+      " * @license 'CC BY-NC 4.0'",
+      " * ",
+      " * @description",
+      " * ${2:description}.",
+      " * ",
+      " * @example",
+      " * 1. Open a document in CMYK mode.",
+      " * 2. Use `CTRL+F12` to run this script.",
+      " * ",
+      " */",
+      "",
+      "",
+      "// @include '../library/utilities/miscUtils.jsx'",
+      "// @include '../library/utilities/scriptUIUtils.jsx'",
+      "",
+      "$0"
+    ],
+  },
+
+  "sui-panel-col": {
+    "prefix": "sui-panel-col",
+    "scope": "javascript,javascriptreact",
+    "body": [
+      "// Panel: ${1:name}",
+      "var ${2:panel} = win.add('panel', undefined, '${1:name}');",
+      "    ${2:panel}.orientation = 'column';",
+      "    ${2:panel}.alignChildren = 'left';",
+      "    ${2:panel}.margins = scriptUIUtils.panelMargins;",
+      ""
+    ],
+  },  
+
+  "sui-panel-row": {
+    "prefix": "sui-panel-row",
+    "scope": "javascript,javascriptreact",
+    "body": [
+      "// Panel: ${1:name}",
+      "var ${2:panel} = win.add('panel', undefined, '${1:name}');",
+      "    ${2:panel}.orientation = 'row';",
+      "    ${2:panel}.alignChildren = 'left';",
+      "    ${2:panel}.margins = scriptUIUtils.panelMargins;",
+      ""
+    ],
+  },
+
+  "sui-side-by-side-panels": {
+    "prefix": "sui-side-by-side-panels",
+    "scope": "javascript,javascriptreact",
+    "body": [
+      "// Group: Column wrap",
+      "var columnWrap = win.add('group');",
+      "    columnWrap.orientation = 'row';",
+      "    columnWrap.alignChildren = 'fill';",
+      "",
+      "// Panel: Left column",
+      "var leftColumn = columnWrap.add('panel', undefined, 'Left');",
+      "    leftColumn.orientation = 'column';",
+      "    leftColumn.alignChildren = 'left';",
+      "    leftColumn.preferredSize.width = 200;",
+      "    leftColumn.margins = scriptUIUtils.panelMargins;",
+      "",
+      "// Panel: Right column",
+      "var rightColumn = columnWrap.add('panel', undefined, 'Right');",
+      "    rightColumn.orientation = 'column';",
+      "    rightColumn.alignChildren = 'left';",
+      "    rightColumn.preferredSize.width = 200;",
+      "    rightColumn.margins = scriptUIUtils.panelMargins;",
+      "",      
+    ],
+  },
+
+  "sui-group": {
+    "prefix": "sui-group",
+    "scope": "javascript,javascriptreact",
+    "body": [
+      "// Group: ${1:name}",
+      "var ${2:group} = win.add('group');",
+      "    ${2:group}.orientation = 'row';",
+      "    ${2:group}.alignChildren = 'fill';",
+      ""
+    ],
+  },
+
+  "sui-confirm-prompt": {
+    "prefix": "sui-confirm-prompt",
+    "scope": "javascript,javascriptreact",
+    "body": [
+      "// Confirm run script",
+      "var promptRun = scriptUIUtils.promptConfirm(functionTitle, '${1:prompt}');",
+      "",
+      "if (!promptRun) {",
+      "  return;",
+      "}",
+      ""
+    ],
+  },
+
+  "sui-reset-button-group": {
+    "prefix": "sui-reset-button-group",
+    "body": [
+      "//",
+      "// Reset button group",
+      "//",
+      "var resetGroup = win.add('group', undefined);",
+      "    resetGroup.orientation = 'column';",
+      "    resetGroup.alignment = 'fill';",
+      "",
+      "var resetButton = resetGroup.add('button', undefined, 'Reset');",
+      "    resetButton.alignment = 'fill';",
+      "    resetButton.onClick = resetButtonHandler;",
+      "",
+      "function resetButtonHandler() {",
+      "  // Reset method here",
+      "  $0",
+      "  win.close();",
+      "};"
+    ],
+  },
+
+  "sui-text-display-gorup": {
+    "prefix": "sui-text-display-group",
+    "body": [
+      "//",
+      "// Text display group",
+      "//",
+      "var textGroup = win.add('group', undefined);",
+      "    textGroup.orientation = 'column';",
+      "    textGroup.alignment = 'fill';",
+      "",
+      "var text = '${1:text}';",
+      "",
+      "var staticText = textGroup.add('statictext', undefined, text, {multiline: true});",
+      "    staticText.alignment = ['fill', 'top'];",
+      "",
+    ],
+  },
+  
+}
+  

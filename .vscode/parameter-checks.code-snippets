@@ -1,0 +1,294 @@
+{
+  "check-generic": {
+    "prefix": "check-generic",
+    "body": [
+      "if (typeof ${1:param} === 'undefined' || ${1:param} === null) {",
+      "  throw new Error('Missing or undefined parameter: ${1:param}');",
+      "}"
+    ],
+  },
+
+  "check-active-doc": {
+    "prefix": "check-active-doc",
+    "scope": "markdown,javascript,extendscript,javascriptreact",
+    "body": [
+      "// var doc = docutils.getActiveDocument();",
+      "if (!app.activeDocument) {",
+      "  throw new Error('No active document.');",
+      "}",
+      "",
+      "var doc = app.activeDocument;"
+    ],
+  },
+  "check-selected-items": {
+    "prefix": "check-selected-items",
+    "scope": "javascript,extendscript,javascriptreact",
+    "body": [
+      "// var selection = itemUtils.getSelectedItems();",
+      "if (app.activeDocument.selection.length === 0) {",
+      "  throw new Error('No selected items.');",
+      "}",
+      "",
+      "var selection = app.activeDocument.selection;"
+    ],
+  },
+  "check-selected-swatches": {
+    "prefix": "check-selected-swatches",
+    "scope": "javascript,extendscript,javascriptreact",
+    "body": [
+      "// var swatches = swatchUtils.getSelectedSwatches();",
+      "if (app.activeDocument.swatches.getSelected().length === 0){",
+      "  throw new Error('No selected swatches.');",
+      "}",
+      "",
+      "var swatches = doc.swatches.getSelected();"
+    ],
+  },
+
+  "check-array-req": {
+    "prefix": "check-array-req",
+    "scope": "javascript,extendscript,javascriptreact",
+    "body": [
+      "if (!(${1:param} instanceof Array)) {",
+      "  throw new Error('Parameter must be an array: ${1:param}.');",
+      "}"
+    ]
+  },
+  "check-array-opt": {
+    "prefix": "check-array-opt",
+    "scope": "javascript,extendscript,javascriptreact",
+    "body": [
+      "var ${1:param}Default = ${2:[]};",
+      "var ${1:param}Exists = (array instanceof Array);",
+      "${1:param} = ${1:param}Exists ? ${1:param} : ${1:param}Default;"
+    ]
+  },
+
+  "check-bool-req": {
+    "prefix": "check-bool-req",
+    "scope": "javascript,extendscript,javascriptreact",
+    "body": [
+      "if (typeof ${1:param} !== 'boolean') {",
+      "  throw new Error('Parameter must be a boolean: ${1:param}.');",
+      "}"
+    ]
+  },
+  "check-bool-opt": {
+    "prefix": "check-bool-opt",
+    "scope": "javascript,extendscript,javascriptreact",
+    "body": [
+      "var ${1:param}Default = ${2:true};",
+      "var ${1:param}Exists = (typeof ${1:param} === 'boolean');",
+      "${1:param} = ${1:param}Exists ? ${1:param} : ${1:param}Default;" 
+    ]
+  },
+
+  "check-colorSpace-rgb": {
+    "prefix": "check-colorSpace-rgb",
+    "body": [
+      "if (!(doc.documentColorSpace === DocumentColorSpace.RGB)) {",
+      "  throw new Error('Document must be in RGB Color Mode.');",
+      "}"
+    ],
+  },
+  "check-colorSpace-cmyk": {
+    "prefix": "check-colorSpace-cmyk",
+    "body": [
+      "if (!(doc.documentColorSpace === DocumentColorSpace.CMYK)) {",
+      "  throw new Error('Document must be in CMYK Color Mode.');",
+      "}"
+    ],
+  },
+
+  "check-doc-req": {
+    "prefix": "check-doc-req",
+    "scope": "javascript,extendscript,javascriptreact",
+    "body": [
+      "if (!(doc instanceof Document)) {",
+      "  throw new Error('Parameter must be a Document object: doc');",
+      "}"
+    ]
+  },
+  "check-file-req": {
+    "prefix": "check-file-req",
+    "scope": "javascript,extendscript,javascriptreact",
+    "body": [
+      "if (!(${1:param} instanceof File)) {",
+      "  throw new Error('Parameter must be a File object: ${1:param}');",
+      "}"
+    ]
+  },
+
+  "check-item-visible": {
+    "prefix": "check-item-visible",
+    "body": [
+      "if (!item.hidden) {",
+      "  $0",
+      "}"
+    ]
+  },
+  "check-item-hidden": {
+    "prefix": "check-item-hidden",
+    "body": [
+      "if (item.hidden) {",
+      "  $0",
+      "}"
+    ]
+  },
+  "check-item-unlocked": {
+    "prefix": "check-item-unlocked",
+    "body": [
+      "if (!item.locked) {",
+      "  $0",
+      "}"
+    ]
+  },
+  "check-item-locked": {
+    "prefix": "check-item-locked",
+    "body": [
+      "if (item.locked) {",
+      "  $0",
+      "}"
+    ]
+  },
+  
+  "check-layer-visible": {
+    "prefix": "check-layer-visible",
+    "body": [
+      "if (layer.visible) {",
+      "  $0",
+      "}"
+    ]
+  },
+  "check-layer-hidden": {
+    "prefix": "check-layer-hidden",
+    "body": [
+      "if (!layer.visible) {",
+      "  $0",
+      "}"
+    ]
+  },
+  "check-layer-locked": {
+    "prefix": "check-layer-locked",
+    "body": [
+      "if (layer.locked) {",
+      "  $0",
+      "}"
+    ]
+  },
+  "check-layer-unlocked": {
+    "prefix": "check-layer-unlocked",
+    "body": [
+      "if (!layer.locked) {",
+      "  $0",
+      "}"
+    ]
+  },
+
+  "check-mod-property": {
+    "prefix": "check-mod-property",
+    "scope": "javascript,extendscript,javascriptreact",
+    "body": [
+      "if (typeof ${1:param} === 'undefined' || ${1:param} === null) {",
+      "  throw new Error('Missing or undefined module property: ${1:param}.');",
+      "}"
+    ]
+  },
+  "check-mod-object": {
+    "prefix": "check-mod-object",
+    "scope": "javascript,extendscript,javascriptreact",
+    "body": [
+      "if (typeof ${1:param} !== 'object') {",
+      "  throw new Error('Missing or undefined module object: ${1:param}.');",
+      "}"
+    ]
+  },
+
+  "check-num-req": {
+    "prefix": "check-num-req",
+    "scope": "javascript,extendscript,javascriptreact",
+    "body": [
+      "if (isNaN(${1:param})) {",
+      "  throw new Error('Parameter must be a number: ${1:param}');",
+      "}"
+    ]
+  },
+  "check-num-opt": {
+    "prefix": "check-num-opt",
+    "scope": "javascript,extendscript,javascriptreact",
+    "body": [
+      "var ${1:param}Default = ${2:0};",
+      "var ${1:param}Exists = !isNaN(${1:param});",
+      "${1:param} = ${1:param}Exists ? ${1:param} : ${1:param}Default;",
+      "$0"
+    ]
+  },
+  "check-num-clamp": {
+    "prefix": "check-num-clamp",
+    "scope": "javascript,extendscript,javascriptreact",
+    "body": [
+      "var ${1:param}Default = ${2:0};",
+      "var ${1:param}Exists = !isNaN(${1:param});",
+      "${1:param} = ${1:param}Exists ? Math.min(${3:maxVal}, Math.max(${4:minVal}, ${1:param})) : ${1:param}Default;",
+    ]
+  },
+  "check-num-range": {
+    "prefix": "check-num-range",
+    "scope": "javascript,extendscript,javascriptreact",
+    "body": [
+      "if (isNaN(${1:param}) || ${1:param} < ${2:nimVal} || ${1:param} > ${3:maxVal}) {",
+      "  throw new Error('Parameter must be a number: ${2:minVal} <= ${1:param} <= ${3:maxVal}');",
+      "}"
+    ]
+  },
+
+  "check-obj-req": {
+    "prefix": "check-obj-req",
+    "scope": "javascript,extendscript,javascriptreact",
+    "body": [
+      "if (typeof ${1:param} !== 'object') {",
+      "  throw new Error('Parameter must be an object: ${1:param}.');",
+      "}"
+    ]
+  },
+  "check-obj-opt": {
+    "prefix": "check-obj-opt",
+    "scope": "javascript,extendscript,javascriptreact",
+    "body": [
+      "var ${1:param}Default = ${2:defaultObject};",
+      "var ${1:param}Exists = typeof ${1:param} === 'object'; ",
+      "${1:param} = ${1:param}Exists ? ${1:param} : ${1:param}Default;"
+    ]
+  },
+
+  "check-return": {
+    "prefix": "check-return",
+    "scope": "javascript,extendscript,javascriptreact",
+    "body": [
+      "if (!${1:param}) {",
+      "  var returnMessage = 'SUCCESS ' + functionID + '\\n';",
+      "  if (DEBUG) alert(returnMessage, functionID);",
+      "  return;",
+      "}"
+    ]
+  },
+
+  "check-str-req": {
+    "prefix": "check-str-req",
+    "scope": "javascript,extendscript,javascriptreact",
+    "body": [
+      "if (typeof ${1:param} !== 'string') {",
+      "  throw new Error('Parameter must be a string: ${1:param}');",
+      "}"
+    ]
+  },
+  "check-str-opt": {
+    "prefix": "check-str-opt",
+    "scope": "javascript,extendscript,javascriptreact",
+    "body": [
+      "var ${1:param}Default = ${2:''};", 
+      "var ${1:param}Exists = (typeof ${1:param} === 'string');",
+      "${1:param} = ${1:param}Exists ? ${1:param} : ${1:param}Default;",
+    ]
+  }
+}

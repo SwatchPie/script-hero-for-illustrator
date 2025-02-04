@@ -1,0 +1,46 @@
+/version 3
+/name [ 13
+	67726f75702d756e67726f7570
+]
+/isOpen 0
+/actionCount 2
+/action-1 {
+	/name [ 5
+		67726f7570
+	]
+	/keyIndex 0
+	/colorIndex 4
+	/isOpen 0
+	/eventCount 1
+	/event-1 {
+		/useRulersIn1stQuadrant 0
+		/internalName (adobe_group)
+		/localizedName [ 5
+			47726f7570
+		]
+		/isOpen 0
+		/isOn 1
+		/hasDialog 0
+		/parameterCount 0
+	}
+}
+/action-2 {
+	/name [ 7
+		756e67726f7570
+	]
+	/keyIndex 0
+	/colorIndex 4
+	/isOpen 0
+	/eventCount 1
+	/event-1 {
+		/useRulersIn1stQuadrant 0
+		/internalName (adobe_ungroup)
+		/localizedName [ 7
+			556e67726f7570
+		]
+		/isOpen 0
+		/isOn 1
+		/hasDialog 0
+		/parameterCount 0
+	}
+}

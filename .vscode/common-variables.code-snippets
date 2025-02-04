@@ -1,0 +1,34 @@
+{
+  "var-doc": {
+    "prefix": "var-doc",
+    "scope": "javascript,extendscript,javascriptreact",
+    "body": [
+      "var doc = docUtils.getActiveDocument();"
+    ],
+  },
+  "var-selection": {
+    "prefix": "var-selection",
+    "scope": "javascript,extendscript,javascriptreact",
+    "body": [
+      "var selection = itemUtils.getSelectedItems();"
+    ],
+  },
+  "var-swatches": {
+    "prefix": "var-swatches",
+    "scope": "javascript,extendscript,javascriptreact",
+    "body": [
+      "var swatches = swatchUtils.getSelectedSwatches();"
+    ],
+  },
+  
+  "jsx-heading": {
+    "prefix": "jsx-heading",
+    "scope": "javascript,extendscript,javascriptreact",
+    "body": [
+      "// ----------------------------------------------------",
+      "// $0",
+      "// ----------------------------------------------------"
+    ],
+  },
+
+}

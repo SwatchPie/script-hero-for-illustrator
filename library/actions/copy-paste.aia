@@ -1,0 +1,99 @@
+/version 3
+/name [ 10
+	636f70792d7061737465
+]
+/isOpen 0
+/actionCount 3
+/action-1 {
+	/name [ 14
+		70617374652d696e2d706c616365
+	]
+	/keyIndex 0
+	/colorIndex 6
+	/isOpen 0
+	/eventCount 2
+	/event-1 {
+		/useRulersIn1stQuadrant 0
+		/internalName (adobe_copy)
+		/localizedName [ 4
+			436f7079
+		]
+		/isOpen 0
+		/isOn 1
+		/hasDialog 0
+		/parameterCount 0
+	}
+	/event-2 {
+		/useRulersIn1stQuadrant 0
+		/internalName (adobe_pasteInPlace)
+		/localizedName [ 14
+			506173746520696e20506c616365
+		]
+		/isOpen 0
+		/isOn 1
+		/hasDialog 0
+		/parameterCount 0
+	}
+}
+/action-2 {
+	/name [ 14
+		70617374652d696e2d66726f6e74
+	]
+	/keyIndex 0
+	/colorIndex 6
+	/isOpen 0
+	/eventCount 2
+	/event-1 {
+		/useRulersIn1stQuadrant 0
+		/internalName (adobe_copy)
+		/localizedName [ 4
+			436f7079
+		]
+		/isOpen 0
+		/isOn 1
+		/hasDialog 0
+		/parameterCount 0
+	}
+	/event-2 {
+		/useRulersIn1stQuadrant 0
+		/internalName (adobe_pasteInFront)
+		/localizedName [ 14
+			506173746520696e2046726f6e74
+		]
+		/isOpen 0
+		/isOn 1
+		/hasDialog 0
+		/parameterCount 0
+	}
+}
+/action-3 {
+	/name [ 13
+		70617374652d696e2d6261636b
+	]
+	/keyIndex 0
+	/colorIndex 6
+	/isOpen 0
+	/eventCount 2
+	/event-1 {
+		/useRulersIn1stQuadrant 0
+		/internalName (adobe_copy)
+		/localizedName [ 4
+			436f7079
+		]
+		/isOpen 0
+		/isOn 1
+		/hasDialog 0
+		/parameterCount 0
+	}
+	/event-2 {
+		/useRulersIn1stQuadrant 0
+		/internalName (adobe_pasteInBack)
+		/localizedName [ 13
+			506173746520696e204261636b
+		]
+		/isOpen 0
+		/isOn 1
+		/hasDialog 0
+		/parameterCount 0
+	}
+}

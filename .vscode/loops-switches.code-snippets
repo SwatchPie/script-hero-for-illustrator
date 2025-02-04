@@ -1,0 +1,142 @@
+{
+  "loop-args": {
+    "prefix": "loop-args",
+    "body": [
+      "for (var i = 0; i < arguments.length; i++) {",
+      "  var arg = arguments[i];",
+      "  $0",
+      "}"
+    ],
+  },
+
+  "loop-layers": {
+    "prefix": "loop-layers",
+    "scope": "javascript,javascriptreact",
+    "body": [
+      "var layers = app.activeDocument.layers;",
+      "",
+      "for (var i = 0; i < layers.length; i++) {",
+      "  var layer = layers[i];",
+      "}",
+      "",
+    ],
+  },
+  "loop-layers-reverse": {
+    "prefix": "loop-layers-reverse",
+    "scope": "javascript,javascriptreact",
+    "body": [
+      "var layers = app.activeDocument.layers;",
+      "",
+      "for (var i = layers.length - 1; i >= 0; i--) {",
+      "  var layer = layers[i];",
+      "}",
+      "",
+    ],
+  },
+
+  "loop-selection": {
+    "prefix": "loop-selection",
+    "scope": "javascript,javascriptreact",
+    "body": [
+      "var selection = app.activeDocument.selection;",
+      "",
+      "for (var i = 0; i < selection.length; i++) {",
+      "  var item = selection[i];",
+      "}",
+      "",
+    ],
+  },
+  "loop-selection-reverse": {
+    "prefix": "loop-selection-reverse",
+    "scope": "javascript,javascriptreact",
+    "body": [
+      "var selection = app.activeDocument.selection;",
+      "",
+      "for (var i = selection.length - 1; i >= 0; i--) {",
+      "  var item = selection[i];",
+      "}",
+      "",
+    ],
+  },
+
+  "loop-swatches": {
+    "prefix": "loop-swatches",
+    "scope": "javascript,javascriptreact",
+    "body": [
+      "var swatches = app.activeDocument.swatches.getSelected();",
+      "",
+      "for (var i = 0; i < swatches.length; i++) {",
+      "  var swatch = swatches[i];",
+      "}",
+      "",
+    ],
+  },
+  "loop-swatches-reverse": {
+    "prefix": "loop-swatches-reverse",
+    "scope": "javascript,javascriptreact",
+    "body": [
+      "var swatches = app.activeDocument.swatches.getSelected();",
+      "",
+      "for (var i = swatches.length - 1; i >= 0; i--) {",
+      "  var swatch = swatches[i];",
+      "}",
+      "",
+    ],
+  },
+
+  "loop-switch-pageItem": {
+    "prefix": "loop-switch-pageItem",
+    "body": [
+      "var selection = app.activeDocument.selection;",
+      "",
+      "for (var i = 0; i < selection.length; i++) {",
+      "",
+      "  var item = selection[i];",
+      "",
+      "  switch (item.typename) {",
+      "    case 'CompoundPathItem':",
+      "      // Handle CompoundPathItem specific logic here",
+      "      // Example: item.fillColor = new RGBColor();",
+      "      break;",
+      "",
+      "    case 'GroupItem':",
+      "      // Handle GroupItem specific logic here",
+      "      // Example: item.move(someLayer, ElementPlacement.PLACEATEND);",
+      "      break;",
+      "",      
+      "    case 'PathItem':",
+      "      // Handle PathItem specific logic here",
+      "      // Example: item.strokeColor = new RGBColor();",
+      "      break;",
+      "",
+      "    case 'SymbolItem':",
+      "      // Handle SymbolItem specific logic here",
+      "      // Example: item.symbol.name = \"NewSymbol\";",
+      "      break;",
+      "",
+      "    default:",
+      "      // Handle any other PageItem types, do nothing, throw error?",
+      "      break;",
+      "  }",
+      "",
+      "}"
+    ],
+  },
+  "switch-doc-color-mode": {
+    "prefix": "switch-doc-color-mode",
+    "body": [
+      "var colorMode = doc.documentColorSpace;",
+      "",
+      "switch (colorMode) {",
+      "\tcase DocumentColorSpace.RGB:",
+      "\t\t// code here",
+      "\tcase DocumentColorSpace.CMYK:",
+      "\t\t// code here;",
+      "\tdefault:",
+      "\t\treturn \"Unknown Color Mode\";",
+      "}"
+    ],
+  },
+
+}
+  

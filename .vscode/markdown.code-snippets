@@ -1,0 +1,69 @@
+{
+  "code-js": {
+		"scope": "markdown",
+    "prefix": "code-js",
+    "body": [
+      "",
+      "`````javascript",
+      "",
+      "`````",
+      ""
+    ],
+  },
+  "code-bash": {
+		"scope": "markdown",
+    "prefix": "code-bash",
+    "body": [
+      "",
+      "`````bash",
+      "",
+      "`````",
+      ""
+    ],
+  },
+  "code-python": {
+		"scope": "markdown",
+    "prefix": "code-python",
+    "body": [
+      "",
+      "`````python",
+      "",
+      "`````",
+      ""
+    ],
+  },
+  "code-css": {
+		"scope": "markdown",
+    "prefix": "code-css",
+    "body": [
+      "",
+      "`````css",
+      "",
+      "`````",
+      ""
+    ],
+  },
+  "code-scss": {
+		"scope": "markdown",
+    "prefix": "code-scss",
+    "body": [
+      "",
+      "`````scss",
+      "",
+      "`````",
+      ""
+    ],
+  },
+  "code-html": {
+		"scope": "markdown",
+    "prefix": "code-html",
+    "body": [
+      "",
+      "`````html",
+      "",
+      "`````",
+      ""
+    ],
+  },
+}
+  

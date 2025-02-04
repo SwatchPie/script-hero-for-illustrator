@@ -1,0 +1,209 @@
+/version 3
+/name [ 11
+	73656c6563742d73616d65
+]
+/isOpen 1
+/actionCount 7
+/action-1 {
+	/name [ 22
+		73656c6563742d73616d652d617070656172616e6365
+	]
+	/keyIndex 0
+	/colorIndex 6
+	/isOpen 0
+	/eventCount 1
+	/event-1 {
+		/useRulersIn1stQuadrant 0
+		/internalName (ai_plugin_find)
+		/localizedName [ 8
+			53656c6563743a20
+		]
+		/isOpen 0
+		/isOn 1
+		/hasDialog 0
+		/parameterCount 1
+		/parameter-1 {
+			/key 1851878757
+			/showInPalette -1
+			/type (enumerated)
+			/name [ 15
+				53616d6520417070656172616e6365
+			]
+			/value 15
+		}
+	}
+}
+/action-2 {
+	/name [ 18
+		73656c6563742d73616d652d73796d626f6c
+	]
+	/keyIndex 0
+	/colorIndex 6
+	/isOpen 0
+	/eventCount 1
+	/event-1 {
+		/useRulersIn1stQuadrant 0
+		/internalName (ai_plugin_find)
+		/localizedName [ 8
+			53656c6563743a20
+		]
+		/isOpen 0
+		/isOn 1
+		/hasDialog 0
+		/parameterCount 1
+		/parameter-1 {
+			/key 1851878757
+			/showInPalette -1
+			/type (enumerated)
+			/name [ 20
+				53616d652053796d626f6c20496e7374616e6365
+			]
+			/value 11
+		}
+	}
+}
+/action-3 {
+	/name [ 24
+		73656c6563742d73616d652d6669696c6c2d7374726f6b65
+	]
+	/keyIndex 0
+	/colorIndex 6
+	/isOpen 0
+	/eventCount 1
+	/event-1 {
+		/useRulersIn1stQuadrant 0
+		/internalName (ai_plugin_find)
+		/localizedName [ 8
+			53656c6563743a20
+		]
+		/isOpen 1
+		/isOn 1
+		/hasDialog 0
+		/parameterCount 1
+		/parameter-1 {
+			/key 1851878757
+			/showInPalette -1
+			/type (enumerated)
+			/name [ 18
+				53616d652046696c6c2026205374726f6b65
+			]
+			/value 2
+		}
+	}
+}
+/action-4 {
+	/name [ 22
+		73656c6563742d73616d652d66696c6c2d636f6c6f72
+	]
+	/keyIndex 0
+	/colorIndex 6
+	/isOpen 0
+	/eventCount 1
+	/event-1 {
+		/useRulersIn1stQuadrant 0
+		/internalName (ai_plugin_find)
+		/localizedName [ 8
+			53656c6563743a20
+		]
+		/isOpen 0
+		/isOn 1
+		/hasDialog 0
+		/parameterCount 1
+		/parameter-1 {
+			/key 1851878757
+			/showInPalette -1
+			/type (enumerated)
+			/name [ 15
+				53616d652046696c6c20436f6c6f72
+			]
+			/value 3
+		}
+	}
+}
+/action-5 {
+	/name [ 24
+		73656c6563742d73616d652d7374726f6b652d636f6c6f72
+	]
+	/keyIndex 0
+	/colorIndex 6
+	/isOpen 0
+	/eventCount 1
+	/event-1 {
+		/useRulersIn1stQuadrant 0
+		/internalName (ai_plugin_find)
+		/localizedName [ 8
+			53656c6563743a20
+		]
+		/isOpen 0
+		/isOn 1
+		/hasDialog 0
+		/parameterCount 1
+		/parameter-1 {
+			/key 1851878757
+			/showInPalette -1
+			/type (enumerated)
+			/name [ 17
+				53616d65205374726f6b6520436f6c6f72
+			]
+			/value 5
+		}
+	}
+}
+/action-6 {
+	/name [ 23
+		73656c6563742d73616d652d666f6e742d66616d696c79
+	]
+	/keyIndex 0
+	/colorIndex 6
+	/isOpen 0
+	/eventCount 1
+	/event-1 {
+		/useRulersIn1stQuadrant 0
+		/internalName (ai_plugin_find)
+		/localizedName [ 8
+			53656c6563743a20
+		]
+		/isOpen 0
+		/isOn 1
+		/hasDialog 0
+		/parameterCount 1
+		/parameter-1 {
+			/key 1851878757
+			/showInPalette -1
+			/type (enumerated)
+			/name [ 16
+				53616d6520466f6e742046616d696c79
+			]
+			/value 24
+		}
+	}
+}
+/action-7 {
+	/name [ 22
+		73656c6563742d73616d652d746578742d636f6c6f72
+	]
+	/keyIndex 0
+	/colorIndex 6
+	/isOpen 0
+	/eventCount 1
+	/event-1 {
+		/useRulersIn1stQuadrant 0
+		/internalName (ai_plugin_find)
+		/localizedName [ 8
+			53656c6563743a20
+		]
+		/isOpen 0
+		/isOn 1
+		/hasDialog 0
+		/parameterCount 1
+		/parameter-1 {
+			/key 1851878757
+			/showInPalette -1
+			/type (enumerated)
+			/name [ 20
+				53616d6520546578742046696c6c20436f6c6f72
+			]
+			/value 20
+		}
+	}
+}

@@ -1,0 +1,20 @@
+{
+  "square": {
+    "keyStr": "Test String.",
+    "keyInt": 27,
+    "keyDec": 42.71,
+    "keyNull": null
+  },
+  "circle": {
+    "keyStr": "Test String.",
+    "keyInt": 27,
+    "keyDec": 42.71,
+    "keyNull": null
+  },
+  "star": {
+    "keyStr": "Test String.",
+    "keyInt": 27,
+    "keyDec": 42.71,
+    "keyNull": null
+  }
+}

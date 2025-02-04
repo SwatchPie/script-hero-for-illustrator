@@ -1,0 +1,511 @@
+{
+  "@function": {
+    "prefix": "@function",
+    "scope": "javascript,javascriptreact",
+    "body": [
+      "@function ${1:util}.${2:function}"
+    ],
+  },
+
+  //
+  // @param
+  //
+  "@param-document": {
+    "prefix": "@param-document",
+    "body": [
+      "@param {Document} ${1:param} - The active document."
+    ]
+  },
+  "@param-array": {
+    "prefix": "@param-array",
+    "body": [
+      "@param {Array} ${1:param} - A list of ${2:description}."
+    ]
+  },
+  "@param-artboard": {
+    "prefix": "@param-artboard",
+    "body": [
+      "@param {Artboard} artboard - An `Artboard` object."
+    ]
+  },
+  "@param-artboards": {
+    "prefix": "@param-artboards",
+    "body": [
+      "@param {Artboards} artboards - A collection of `Artboard` objects."
+    ]
+  },
+  "@param-bool-req": {
+    "prefix": "@param-bool-req",
+    "body": [
+      "@param {boolean} ${1:param} - `true` if ${2:description}."
+    ]
+  },
+  "@param-bool-opt": {
+    "prefix": "@param-bool-opt",
+    "body": [
+      "@param {boolean} [${1:param}=true] - Optional. `true` if ${2:description}."
+    ]
+  },
+  "@param-color": {
+    "prefix": "@param-color",
+    "body": [
+      "@param {Color} ${1:param} - A `Color` object for fills and swatches."
+    ]
+  },
+  "@param-compoundpathitem": {
+    "prefix": "@param-compoundpathitem",
+    "body": [
+      "@param {CompoundPathItem} ${1:param} - A `CompoundPathItem` object."
+    ]
+  },
+  "@param-compoundpathitems": {
+    "prefix": "@param-compoundpathitems",
+    "body": [
+      "@param {CompoundPathItems} ${1:param} - A collection of `CompoundPathItem` objects."
+    ]
+  },
+  "@param-file": {
+    "prefix": "@param-file",
+    "body": [
+      "@param {File} file - A `File` object."
+    ]
+  },
+  "@param-groupitem": {
+    "prefix": "@param-groupitem",
+    "body": [
+      "@param {GroupItem} ${1:param} - A `GroupItem` object."
+    ]
+  },
+  "@param-layer": {
+    "prefix": "@param-layer",
+    "body": [
+      "@param {Layer} layer - A `Layer` object."
+    ]
+  },
+  "@param-layers": {
+    "prefix": "@param-layers",
+    "body": [
+      "@param {Layers} layers - A collection of `Layer` objects."
+    ]
+  },
+  "@param-matrix": {
+    "prefix": "@param-matrix",
+    "body": [
+      "@param {Matrix} matrix - A `Matrix` object for transformation operations."
+    ]
+  },
+  "@param-number-req": {
+    "prefix": "@param-number-req",
+    "body": [
+      "@param {number} ${1:param} - ${2:description}."
+    ]
+  },
+  "@param-number-opt": {
+    "prefix": "@param-number-opt",
+    "body": [
+      "@param {number} [${1:param}=100] - Optional. ${2:description}."
+    ]
+  },
+  "@param-object-req": {
+    "prefix": "@param-object-req",
+    "body": [
+      "@param {object} ${1:param} - An ordinary object with ${2:description}."
+    ]
+  },
+  "@param-object-opt": {
+    "prefix": "@param-object-opt",
+    "body": [
+      "@param {object} [${1:param}=default] - Optional. An ordinary object with ${2:description}."
+    ]
+  },
+  "@param-rect": {
+    "prefix": "@param-rect",
+    "body": [
+      "@param {Rect} ${1:param} - A `Rect` object."
+    ]
+  },
+  "@param-string": {
+    "prefix": "@param-string",
+    "body": [
+      "@param {string} ${1:param} - ${2:description}"
+    ]
+  },
+  "@param-swatch": {
+    "prefix": "@param-swatch",
+    "body": [
+      "@param {Swatch} swatch - A `Swatch` object."
+    ]
+  },
+  "@param-swatches": {
+    "prefix": "@param-swatches",
+    "body": [
+      "@param {Swatches} swatches - A collection of `Swatch` objects."
+    ]
+  },
+  "@param-symbol": {
+    "prefix": "@param-symbol",
+    "body": [
+      "@param {Symbol} symbol - A `Symbol` object, used for symbol instances and libraries."
+    ]
+  },
+  "@param-symbols": {
+    "prefix": "@param-symbols",
+    "body": [
+      "@param {Symbols} symbols - A collection of `Symbol` objects."
+    ]
+  },
+  "@param-pageitem": {
+    "prefix": "@param-pageitem",
+    "body": [
+      "@param {PageItem} pageItem - A single `PageItem` object."
+    ]
+  },
+  "@param-pageitems": {
+    "prefix": "@param-pageitems",
+    "body": [
+      "@param {PageItems} pageItems - A collection of `PageItem` objects."
+    ]
+  },
+  "@param-pathitem": {
+    "prefix": "@param-pathitem",
+    "body": [
+      "@param {PathItem} pathItem - A `PathItem` object."
+    ]
+  },
+  "@param-pathitems": {
+    "prefix": "@param-pathitems",
+    "body": [
+      "@param {PathItems} pathItems - A collection of `PathItem` objects."
+    ]
+  },
+  "@param-pattern": {
+    "prefix": "@param-pattern",
+    "body": [
+      "@param {Pattern} pattern - A `Pattern` object for fills and swatches."
+    ]
+  },
+  "@param-textframe": {
+    "prefix": "@param-textframe",
+    "body": [
+      "@param {TextFrame} textFrame - A `TextFrame` object."
+    ]
+  },
+  "@param-textframes": {
+    "prefix": "@param-textframes",
+    "body": [
+      "@param {TextFrames} textFrames - A collection of `TextFrame` objects."
+    ]
+  },
+  "@param-transformationmatrix": {
+    "prefix": "@param-transformationmatrix",
+    "body": [
+      "@param {TransformationMatrix} ${1:param} - A `TransformationMatrix` object for complex transformations."
+    ]
+  },
+  "@param-unitvalue": {
+    "prefix": "@param-unitvalue",
+    "body": [
+      "@param {UnitValue} unitVal - A `UnitValue` object, useful for managing measurements in different units."
+    ]
+  },
+
+  //
+  // @returns
+  //
+  "@returns-void": {
+    "prefix": "@returns-void",
+    "scope": "javascript,javascriptreact",
+    "body": [
+      "@returns {void}"
+    ],
+  },
+  "@returns-document": {
+    "prefix": "@returns-document",
+    "body": [
+      "@returns {Document} The active document."
+    ]
+  },
+  "@returns-array": {
+    "prefix": "@returns-array",
+    "body": [
+      "@returns {Array} An array of ${1:description}."
+    ]
+  },
+  "@returns-artboard": {
+    "prefix": "@returns-artboard",
+    "body": [
+      "@returns {Artboard} An `Artboard` object."
+    ]
+  },
+  "@returns-artboards": {
+    "prefix": "@returns-artboards",
+    "body": [
+      "@returns {Artboards} A collection of `Artboard` objects."
+    ]
+  },
+  "@returns-boolean": {
+    "prefix": "@returns-boolean",
+    "body": [
+      "@returns {boolean} `true` if ${1:description}."
+    ]
+  },
+  "@returns-color": {
+    "prefix": "@returns-color",
+    "body": [
+      "@returns {Color} A `Color` object for fills and swatches."
+    ]
+  },
+  "@returns-compoundpathitem": {
+    "prefix": "@returns-compoundpathitem",
+    "body": [
+      "@returns {CompoundPathItem} A `CompoundPathItem` object."
+    ]
+  },
+  "@returns-compoundpathitems": {
+    "prefix": "@returns-compoundpathitems",
+    "body": [
+      "@returns {CompoundPathItems} A collection of `CompoundPathItem` objects."
+    ]
+  },
+  "@returns-file": {
+    "prefix": "@returns-file",
+    "body": [
+      "@returns {File} A `File` object."
+    ]
+  },
+  "@returns-groupitem": {
+    "prefix": "@returns-groupitem",
+    "body": [
+      "@returns {GroupItem} A `GroupItem` object."
+    ]
+  },
+  "@returns-layer": {
+    "prefix": "@returns-layer",
+    "body": [
+      "@returns {Layer} A `Layer` object."
+    ]
+  },
+  "@returns-layers": {
+    "prefix": "@returns-layers",
+    "body": [
+      "@returns {Layers} A collection of `Layer` objects."
+    ]
+  },
+  "@returns-matrix": {
+    "prefix": "@returns-matrix",
+    "body": [
+      "@returns {Matrix} A `Matrix` object for transformation operations."
+    ]
+  },
+  "@returns-number": {
+    "prefix": "@returns-number",
+    "body": [
+      "@returns {number} ${1:description}."
+    ]
+  },
+  "@returns-object": {
+    "prefix": "@returns-object",
+    "body": [
+      "@returns {object} An ordinary object with ${1:description}."
+    ]
+  },
+  "@returns-rect": {
+    "prefix": "@returns-rect",
+    "body": [
+      "@returns {Rect} A `Rect` object."
+    ]
+  },
+  "@returns-string": {
+    "prefix": "@returns-string",
+    "body": [
+      "@returns {string} ${1:description}."
+    ]
+  },
+  "@returns-swatch": {
+    "prefix": "@returns-swatch",
+    "body": [
+      "@returns {Swatch} A `Swatch` object."
+    ]
+  },
+  "@returns-swatches": {
+    "prefix": "@returns-swatches",
+    "body": [
+      "@returns {Swatches} A collection of `Swatch` objects."
+    ]
+  },
+  "@returns-symbol": {
+    "prefix": "@returns-symbol",
+    "body": [
+      "@returns {Symbol} A `Symbol` object, used for symbol instances and libraries."
+    ]
+  },
+  "@returns-symbols": {
+    "prefix": "@returns-symbols",
+    "body": [
+      "@returns {Symbols} A collection of `Symbol` objects."
+    ]
+  },
+  "@returns-pageitem": {
+    "prefix": "@returns-pageitem",
+    "body": [
+      "@returns {PageItem} A single `PageItem` object."
+    ]
+  },
+  "@returns-pageitems": {
+    "prefix": "@returns-pageitems",
+    "body": [
+      "@returns {PageItems} A collection of `PageItem` objects."
+    ]
+  },
+  "@returns-pathitem": {
+    "prefix": "@returns-pathitem",
+    "body": [
+      "@returns {PathItem} A `PathItem` object."
+    ]
+  },
+  "@returns-pathitems": {
+    "prefix": "@returns-pathitems",
+    "body": [
+      "@returns {PathItems} A collection of `PathItem` objects."
+    ]
+  },
+  "@returns-pattern": {
+    "prefix": "@returns-pattern",
+    "body": [
+      "@returns {Pattern} A `Pattern` object for fills and swatches."
+    ]
+  },
+  "@returns-textframe": {
+    "prefix": "@returns-textframe",
+    "body": [
+      "@returns {TextFrame} A `TextFrame` object."
+    ]
+  },
+  "@returns-textframes": {
+    "prefix": "@returns-textframes",
+    "body": [
+      "@returns {TextFrames} A collection of `TextFrame` objects."
+    ]
+  },
+  "@returns-transformationmatrix": {
+    "prefix": "@returns-transformationmatrix",
+    "body": [
+      "@returns {TransformationMatrix} A `TransformationMatrix` object for complex transformations."
+    ]
+  },
+  "@returns-unitvalue": {
+    "prefix": "@returns-unitvalue",
+    "body": [
+      "@returns {UnitValue} A `UnitValue` object, useful for managing measurements in different units."
+    ]
+  },
+
+  //
+  // @throws
+  // 
+
+  "@throws": {
+    "prefix": "@throws",
+    "scope": "javascript,javascriptreact",
+    "body": [
+      "@throws {Error} ${1:condition}."
+    ],
+  },
+  "@throws-doc": {
+    "prefix": "@throws-doc",
+    "scope": "javascript,javascriptreact",
+    "body": [
+      "@throws {Error} If no active document."
+    ],
+  },
+  "@throws-items": {
+    "prefix": "@throws-items",
+    "scope": "javascript,javascriptreact",
+    "body": [
+      "@throws {Error} If no selected items."
+    ],
+  },
+  "@throws-missing": {
+    "prefix": "@throws-missing",
+    "scope": "javascript,javascriptreact",
+    "body": [
+      "@throws {Error} If missing or undefined parameters."
+    ],
+  },
+  "@throws-mod-prop": {
+    "prefix": "@throws-mod-prop",
+    "scope": "javascript,javascriptreact",
+    "body": [
+      "@throws {Error} If missing or undefined module properties."
+    ],
+  },
+  "@throws-nan": {
+    "prefix": "@throws-nan",
+    "scope": "javascript,javascriptreact",
+    "body": [
+      "@throws {Error} If `${1:param}` is NaN or out of range."
+    ],
+  },
+  "@throws-swatches": {
+    "prefix": "@throws-swatches",
+    "scope": "javascript,javascriptreact",
+    "body": [
+      "@throws {Error} If no selected swatches."
+    ],
+  },
+
+  //
+  // @example
+  //
+
+  "@examp-array": {
+    "prefix": "@examp-array",
+    "scope": "javascript,javascriptreact",
+    "body": [
+      "@example",
+      "* var colors = ['red', 'white', 'blue'];",
+      "* var numbers = [1, 2, 3];",
+      "* $0"
+    ],
+  },
+  "@examp-doc": {
+    "prefix": "@examp-doc",
+    "scope": "javascript,javascriptreact",
+    "body": [
+      "@example",
+      "* var doc = docUtils.getActiveDocument();",
+      "* $0"
+    ],
+  },
+  "@examp-artboards": {
+    "prefix": "@examp-artboard",
+    "scope": "javascript,javascriptreact",
+    "body": [
+      "@example",
+      "* var doc = docUtils.getActiveDocument();",
+      "* var artboards = doc.artboards;",
+      "* var artboard = artboards[0];",
+      "* $0"
+    ],
+  },
+  "@examp-items": {
+    "prefix": "@examp-items",
+    "scope": "javascript,javascriptreact",
+    "body": [
+      "@example",
+      "* var selection = itemUtils.getSelectedItems();",
+      "* var item = selection[0];",
+      "* $0"
+    ],
+  },
+  "@example-swatches": {
+    "prefix": "@examp-swatches",
+    "scope": "javascript,javascriptreact",
+    "body": [
+      "@example",
+      "* var swatches = swatchUtils.getSelectedSwatches();",
+      "* var swatch = swatches[0];",
+      "* $0"
+    ],
+  },
+}

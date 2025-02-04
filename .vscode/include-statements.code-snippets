@@ -1,0 +1,91 @@
+{
+  "@inc-global": {
+    "prefix": "@inc-global",
+    "scope": "javascript,extendscript,javascriptreact",
+    "body": [
+      "// @include '../global.jsx'",
+      "$0"
+    ],
+  },
+  "@inc-artboardUtils": {
+    "prefix": "@inc-artboardUtils",
+    "scope": "javascript,extendscript,javascriptreact",
+    "body": [
+      "// @include '../library/utilities/artboardUtils.jsx'",
+      "$0"
+    ],
+  },
+  "@inc-colorUtils": {
+    "prefix": "@inc-colorUtils",
+    "scope": "javascript,extendscript,javascriptreact",
+    "body": [
+      "// @include '../library/utilities/colorUtils.jsx'",
+      "$0"
+    ],
+  },
+  "@inc-docUtils": {
+    "prefix": "@inc-docUtils",
+    "scope": "javascript,extendscript,javascriptreact",
+    "body": [
+      "// @include '../library/utilities/docUtils.jsx'",
+      "$0"
+    ],
+  },
+  "@inc-groupUtils": {
+    "prefix": "@inc-groupUtils",
+    "scope": "javascript,extendscript,javascriptreact",
+    "body": [
+      "// @include '../library/utilities/groupUtils.jsx'",
+      "$0"
+    ],
+  },
+  "@inc-itemUtils": {
+    "prefix": "@inc-itemUtils",
+    "scope": "javascript,extendscript,javascriptreact",
+    "body": [
+      "// @include '../library/utilities/itemUtils.jsx'",
+      "$0"
+    ],
+  },
+  "@inc-jsonUtils": {
+    "prefix": "@inc-jsonUtils",
+    "scope": "javascript,extendscript,javascriptreact",
+    "body": [
+      "// @include '../library/utilities/jsonUtils.jsx'",
+      "$0"
+    ],
+  },
+  "@inc-layerUtils": {
+    "prefix": "@inc-layerUtils",
+    "scope": "javascript,extendscript,javascriptreact",
+    "body": [
+      "// @include '../library/utilities/layerUtils.jsx'",
+      "$0"
+    ],
+  },
+  "@inc-miscUtils": {
+    "prefix": "@inc-miscUtils",
+    "scope": "javascript,extendscript,javascriptreact",
+    "body": [
+      "// @include '../library/utilities/miscUtils.jsx'",
+      "$0"
+    ],
+  },
+  "@inc-scriptUIUtils": {
+    "prefix": "@inc-scriptUIUtils",
+    "scope": "javascript,extendscript,javascriptreact",
+    "body": [
+      "// @include '../library/utilities/scriptUIUtils.jsx'",
+      "$0"
+    ],
+  },
+  "@inc-swatchUtils": {
+    "prefix": "@inc-swatchUtils",
+    "scope": "javascript,extendscript,javascriptreact",
+    "body": [
+      "// @include '../library/utilities/swatchUtils.jsx'",
+      "$0"
+    ],
+  },
+}
+
