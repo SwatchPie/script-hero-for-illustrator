@@ -89,7 +89,7 @@ I wrote the scripts in [transform-hero](./transform-hero/README.md) to help with
 
 ### Document Hero
 
-The scripts in `document-hero` are my current project. Here, the big ideas are:
+The scripts in [document-hero](./document-hero/README.md) are my current project. Here, the big ideas are:
 
 - `document-export` for exporting to various formats and scales.
 - `delete-unused-panel-items` for reducing file size.
@@ -98,7 +98,7 @@ The scripts in `document-hero` are my current project. Here, the big ideas are:
 
 ## Contribute
 
-If you have a suggestion or find a problem, I would love to know. Please create an issue.
+If you have a suggestion or find a bug, I would love to know. Please [create an issue](https://github.com/SwatchPie/script-hero-for-illustrator/issues).
 
-FWW I am the furthest thing from a GitHub expert and this project is a work in progress. This is to say that I have no idea how to work with branches or pull requests. And I have zero time to learn right now. Everything I work on is immediately available on the main branch. If you'd like to help with that, please let me know.
+FWW I am not a GitHub expert and this project is a work in progress. This is to say that I have no idea how to work with branches or pull requests. And I have zero time to learn right now. Everything I work on is immediately available on the main branch. 
 
