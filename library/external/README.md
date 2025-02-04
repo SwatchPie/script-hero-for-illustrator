@@ -4,7 +4,5 @@ This directory holds external JavaScript libraries.
 
 ## json2.js
 
-Not currently implemented. For possible future use. 
-
-[GitHub JSON-js](https://github.com/douglascrockford/JSON-js)
+[GitHub JSON-js](https://github.com/douglascrockford/JSON-js) - Used in `itemUtils` to store layer-level data.
 

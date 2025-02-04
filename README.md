@@ -60,7 +60,7 @@ The only things you need to work with **Script Hero** are [global.jsx](./global.
 - [library/tests](./library/tests/README.md) are the corresponding tests for each utility module. 
 - [library/helpers](./library/helpers/README.md) are stand-alone scripts not meant to be used in workflows or by other scripts. 
 - [library/actions](./library/actions/README.md) are Illustrator Action files used when something can't be scripted directly.
-- [library/external](./library/external/README.md) holds 3rd party JavaScript libraries. There are none currently implemented in this project. 
+- [library/external](./library/external/README.md) holds 3rd party JavaScript libraries. 
 
 
 ## Scripts
