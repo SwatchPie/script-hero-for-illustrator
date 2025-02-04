@@ -71,8 +71,8 @@ Other directories in this repo contain scripts written using **Script Hero** uti
 
 The scripts in [swatch-hero](./swatch-hero/README.md) are what inspired **Script Hero**. 
 
-- `swatch-legend` and `swatch-squares` create a grid of tiles for selected swatches. `swatch-squares` makes just a tile. `swatch-legend` adds text with Swatch info to the tile. 
-- `swatch-data-export` and `item-color-export` export color data to a CSV file. Data include the source color comps and [conversions](./docs/color-conversion.md) to other color spaces.
+- `swatch-legend` create a grid of tiles with optional color data for selected swatches.
+- `swatch-data-export` and `item-color-export` export color data to a CSV file. Data include the source color comps and conversions to other color spaces.
 - `swatches-random` randomly applies selected swatches to selected items. 
 
 ### Swatches Add
